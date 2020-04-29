@@ -1,8 +1,12 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import auth0 from '../lib/auth0'
 import axios from 'axios'
+import router from 'next/router'
+import { useAuth } from '../lib/AuthContext'
+
 
 const CreateStatus = () => {
+    const auth = useAuth()
        const [dados, setDados] = useState ({
         status: 'bem',
         coords: {
@@ -11,6 +15,9 @@ const CreateStatus = () => {
         }
 
     })
+    if(auth.isAuthReady && !auth.isAuth){
+        router.push('/')
+    }
     const getMylocation = () => {
        if(navigator.geolocation){
            navigator.geolocation.getCurrentPosition(position => {
