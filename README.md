@@ -4,10 +4,10 @@ O Projeto "My Daily Status" foi inspirado na situação da pandemia do Coronavir
 
 Tecnologias Utilizadas:
 
-Node.js
-React.js
-Next.js
-Tailwind CSS
-Auth0 Authentication
-Firebase Database
-Zeit
+Node.js <br>
+React.js <br>
+Next.js <br>
+Tailwind CSS <br>
+Auth0 Authentication <br>
+Firebase Database <br>
+Zeit.
